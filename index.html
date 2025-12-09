@@ -3,11 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coral Vista Inn | Kariyathumpara Resort</title>
+
+    <!-- Primary SEO -->
+    <title>
+      Coral Vista Inn | Best Riverside Resort in Kariyathumpara, Kerala
+    </title>
     <meta
       name="description"
-      content="Experience the serenity of Kariyathumpara at Coral Vista Inn. The perfect riverside getaway in Kozhikode, Kerala."
+      content="Stay at Coral Vista Inn, a serene riverside resort in Kariyathumpara (the Ooty of Kerala). Enjoy cozy rooms, authentic food, and trekking near Kakkayam Dam. Book your getaway in Kozhikode today!"
     />
+    <meta
+      name="keywords"
+      content="Coral Vista Inn, Kariyathumpara resort, hotels in Kariyathumpara, Kakkayam Dam stay, riverside resort Kozhikode, Ooty of Kerala resort, homestay in Kariyathumpara, Kerala tourism"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://coralvistainn.com/" />
+    <meta name="author" content="Coral Vista Inn" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://coralvistainn.com/" />
+    <meta
+      property="og:title"
+      content="Coral Vista Inn | Riverside Escape in Kariyathumpara"
+    />
+    <meta
+      property="og:description"
+      content="Experience the serenity of the 'Ooty of Kerala'. Best riverside stay near Kakkayam Dam with cozy rooms and homely food."
+    />
+    <meta
+      property="og:image"
+      content="https://coralvistainn.com/area-bg.webp"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://coralvistainn.com/" />
+    <meta
+      property="twitter:title"
+      content="Coral Vista Inn | Kariyathumpara Resort"
+    />
+    <meta
+      property="twitter:description"
+      content="Escape to nature's lap at Coral Vista Inn. The perfect riverside gateway in Kozhikode."
+    />
+    <meta
+      property="twitter:image"
+      content="https://coralvistainn.com/area-bg.webp"
+    />
+
+    <!-- JSON-LD Schema for Local Business (Vital for Local SEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Resort",
+        "name": "Coral Vista Inn",
+        "image": "https://coralvistainn.com/area-bg.webp",
+        "@id": "https://coralvistainn.com",
+        "url": "https://coralvistainn.com",
+        "telephone": "+919526100505",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Kariyathumpara, Thonikkadavu",
+          "addressLocality": "Kozhikode",
+          "addressRegion": "Kerala",
+          "postalCode": "673527",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 11.5432,
+          "longitude": 75.8901
+        },
+        "priceRange": "₹₹",
+        "servesCuisine": "Kerala",
+        "description": "A beautiful riverside resort located in Kariyathumpara, offering scenic views, trekking access to Kakkayam Dam, and authentic Kerala hospitality.",
+        "amenityFeature": [
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Free Wi-Fi",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Parking",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "River Access",
+            "value": "True"
+          }
+        ]
+      }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link
@@ -84,6 +174,7 @@
             <button
               id="mobile-menu-btn"
               class="text-stone-600 hover:text-emerald-600 focus:outline-none"
+              aria-label="Open mobile menu"
             >
               <i data-lucide="menu" class="h-8 w-8"></i>
             </button>
@@ -164,11 +255,11 @@
               A Riverside Haven in the 'Ooty of Kerala'
             </h2>
             <p class="text-lg text-stone-600 leading-relaxed">
-              Coral Vista Inn is situated in the breathtaking landscape of
-              Kariyathumpara, often celebrated as the "Ooty of Kerala" for its
-              pristine beauty. Nestled near the foothills of Kakkayam, our
-              resort offers a panoramic view of lush greenery and crystal-clear
-              waters.
+              <strong>Coral Vista Inn</strong> is situated in the breathtaking
+              landscape of <strong>Kariyathumpara</strong>, often celebrated as
+              the "Ooty of Kerala" for its pristine beauty. Nestled near the
+              foothills of <strong>Kakkayam</strong>, our resort offers a
+              panoramic view of lush greenery and crystal-clear waters.
             </p>
             <p class="text-lg text-stone-600 leading-relaxed">
               Whether you are looking for a family picnic spot, a romantic
@@ -206,7 +297,7 @@
             ></div>
             <img
               src="kpra.jpg"
-              alt="Resort View"
+              alt="Beautiful view of Kariyathumpara resort surroundings"
               class="relative rounded-lg shadow-xl w-full object-cover h-[500px]"
             />
           </div>
@@ -220,7 +311,8 @@
         <div class="text-center max-w-3xl mx-auto mb-16">
           <h2 class="text-4xl font-bold text-stone-900 mb-4">Our Amenities</h2>
           <p class="text-stone-600 text-lg">
-            Everything you need for a comfortable and memorable stay.
+            Everything you need for a comfortable and memorable stay in
+            Kariyathumpara.
           </p>
         </div>
 
@@ -309,16 +401,21 @@
             Capturing Moments
           </h2>
           <p class="text-stone-600 text-lg">
-            A glimpse into the beauty that awaits you.
+            A glimpse into the beauty that awaits you at our resort.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          id="gallery-grid"
+        >
           <!-- Area -->
-          <div class="relative overflow-hidden rounded-lg shadow-lg group h-64">
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg group h-64 cursor-pointer"
+          >
             <img
               src="area.jpg"
-              alt="Resort Area"
+              alt="Scenic Resort Area in Kariyathumpara"
               class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
             />
             <div
@@ -326,14 +423,19 @@
             ></div>
             <div class="absolute bottom-4 left-4 text-white">
               <p class="font-bold text-lg">Resort Area</p>
+              <p class="text-sm opacity-0 group-hover:opacity-100 transition">
+                Click to expand
+              </p>
             </div>
           </div>
 
           <!-- Room 1 -->
-          <div class="relative overflow-hidden rounded-lg shadow-lg group h-64">
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg group h-64 cursor-pointer"
+          >
             <img
               src="room1.jpg"
-              alt="Room Interior"
+              alt="Comfortable Resort Room Interior"
               class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
             />
             <div
@@ -345,10 +447,12 @@
           </div>
 
           <!-- Room 2 -->
-          <div class="relative overflow-hidden rounded-lg shadow-lg group h-64">
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg group h-64 cursor-pointer"
+          >
             <img
               src="room2.jpg"
-              alt="Guest Room"
+              alt="Spacious Guest Room Kariyathumpara"
               class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
             />
             <div
@@ -360,10 +464,12 @@
           </div>
 
           <!-- Bathroom 1 -->
-          <div class="relative overflow-hidden rounded-lg shadow-lg group h-64">
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg group h-64 cursor-pointer"
+          >
             <img
               src="batb1.jpg"
-              alt="Bathroom Facilities"
+              alt="Clean and Modern Bathroom Facilities"
               class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
             />
             <div
@@ -375,10 +481,12 @@
           </div>
 
           <!-- Room 3 -->
-          <div class="relative overflow-hidden rounded-lg shadow-lg group h-64">
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg group h-64 cursor-pointer"
+          >
             <img
               src="room3.jpg"
-              alt="Bedroom View"
+              alt="Bedroom View with Natural Light"
               class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
             />
             <div
@@ -390,10 +498,12 @@
           </div>
 
           <!-- Room 2-2 -->
-          <div class="relative overflow-hidden rounded-lg shadow-lg group h-64">
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg group h-64 cursor-pointer"
+          >
             <img
               src="room2-2.jpg"
-              alt="Room Detail"
+              alt="Room Detail at Coral Vista Inn"
               class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
             />
             <div
@@ -405,10 +515,12 @@
           </div>
 
           <!-- Room 4 -->
-          <div class="relative overflow-hidden rounded-lg shadow-lg group h-64">
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg group h-64 cursor-pointer"
+          >
             <img
               src="room4.jpg"
-              alt="Cozy Accommodation"
+              alt="Cozy Accommodation for Couples"
               class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
             />
             <div
@@ -420,10 +532,12 @@
           </div>
 
           <!-- Room 5 -->
-          <div class="relative overflow-hidden rounded-lg shadow-lg group h-64">
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg group h-64 cursor-pointer"
+          >
             <img
               src="room5.jpg"
-              alt="Spacious Room"
+              alt="Spacious Resort Room"
               class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
             />
             <div
@@ -435,10 +549,12 @@
           </div>
 
           <!-- Room 6 -->
-          <div class="relative overflow-hidden rounded-lg shadow-lg group h-64">
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg group h-64 cursor-pointer"
+          >
             <img
               src="room6.jpg"
-              alt="Interior View"
+              alt="Interior View of Coral Vista Inn"
               class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
             />
             <div
@@ -562,11 +678,13 @@
           <a
             href="https://www.instagram.com/coralvistainn"
             class="hover:text-white transition"
+            aria-label="Visit our Instagram"
             ><i data-lucide="instagram" class="w-6 h-6"></i
           ></a>
           <a
             href="https://www.facebook.com/profile.php?id=61584589692280"
             class="hover:text-white transition"
+            aria-label="Visit our Facebook"
             ><i data-lucide="facebook" class="w-6 h-6"></i
           ></a>
         </div>
@@ -592,6 +710,25 @@
         />
       </svg>
     </a>
+
+    <!-- Lightbox Modal -->
+    <div
+      id="image-modal"
+      class="fixed inset-0 z-[60] bg-black/90 hidden flex items-center justify-center p-4 backdrop-blur-sm opacity-0 transition-opacity duration-300"
+    >
+      <button
+        id="modal-close"
+        class="absolute top-6 right-6 text-white hover:text-emerald-400 transition"
+      >
+        <i data-lucide="x" class="w-10 h-10"></i>
+      </button>
+      <img
+        id="modal-img"
+        src=""
+        alt="Full Screen View"
+        class="max-w-full max-h-[90vh] rounded-lg shadow-2xl transform scale-95 transition-transform duration-300"
+      />
+    </div>
 
     <script>
       // Initialize Icons
@@ -625,6 +762,56 @@
         } else {
           navbar.classList.remove("shadow-md");
           navbar.classList.replace("bg-white", "bg-white/90");
+        }
+      });
+
+      // Lightbox Logic
+      const modal = document.getElementById("image-modal");
+      const modalImg = document.getElementById("modal-img");
+      const closeBtn = document.getElementById("modal-close");
+      // Select the gallery items (parent divs of images inside the #gallery section)
+      const galleryItems = document.querySelectorAll(
+        "#gallery-grid > div > img"
+      );
+
+      // Open Modal
+      galleryItems.forEach((img) => {
+        // Find the parent div which is clickable
+        img.parentElement.addEventListener("click", () => {
+          modal.classList.remove("hidden");
+          // Small delay to allow display:block to apply before opacity transition
+          setTimeout(() => {
+            modal.classList.remove("opacity-0");
+            modalImg.classList.remove("scale-95");
+            modalImg.classList.add("scale-100");
+          }, 10);
+          modalImg.src = img.src;
+        });
+      });
+
+      // Close Modal Function
+      const closeModal = () => {
+        modal.classList.add("opacity-0");
+        modalImg.classList.remove("scale-100");
+        modalImg.classList.add("scale-95");
+        setTimeout(() => {
+          modal.classList.add("hidden");
+        }, 300); // Wait for transition
+      };
+
+      closeBtn.addEventListener("click", closeModal);
+
+      // Close on clicking outside
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      // Close on Escape key
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+          closeModal();
         }
       });
     </script>
